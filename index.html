@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <h1><span>&lt;/&gt;</span> My Portfolio</h1>
+      <nav>
+        <h3><a href="#about" class="nav-link">About</a></h3>
+        <h3><a href="#skills" class="nav-link">Skills</a></h3>
+        <h3><a href="#experience" class="nav-link">Skills</a></h3>
+        <h3><a href="#projects" class="nav-link">Projects</a></h3>
+        <h3><a href="#contact" class="nav-link">Contact</a></h3>
+        <button id="toggle-mode">🌙</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Hi, I'm Avazbek &#9995</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur optio magni, debitis inventore quidem similique laborum, deserunt molestiae reprehenderit veritatis, dicta magnam voluptatem dolore corporis? Ex minima porro iusto.
+        </p>
+        <br>
+        <p><i class="fa-solid fa-location-dot"></i> Uzbekistan, Tashkent</p>   
+        <p><i class="fa-solid fa-briefcase"></i> Available for work</p>   
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://cdn3d.iconscout.com/3d/premium/thumb/web-developer-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--programmer-development-freelance-kit-pack-tools-equipment-illustrations-3738664.png?f=webp"
+          alt="Avazbek's Profile Picture"
+        />
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about_me_text"><h2>About Me</h2></div>
+      
+      <div class="about_main">
+    
+    <img src="https://img.freepik.com/premium-photo/portrait-funny-businessman-beach-man-having-fun-by-sea-summer-vacation-travel-concept_411285-4244.jpg?w=360" alt="">
+     <div class="about_right">   
+      <h1>Curious about me? Here you have it:</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil architecto minima dolor ex numquam beatae nulla odit reiciendis et voluptatem eligendi debitis totam asperiores, magnam consectetur maiores distinctio perspiciatis voluptate.</p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil architecto minima dolor ex numquam beatae nulla odit reiciendis et voluptatem eligendi debitis totam asperiores, magnam consectetur maiores distinctio perspiciatis voluptate.</p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil architecto minima dolor ex numquam beatae nulla odit reiciendis et voluptatem eligendi debitis totam asperiores, magnam consectetur maiores distinctio perspiciatis voluptate.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero esse nihil quod inventore perspiciatis similique odit doloribus eius possimus ullam, molestias nulla impedit sunt assumenda, ratione, dicta praesentium. Molestias, iste?
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sequi distinctio pariatur.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe corporis quae aperiam incidunt necessitatibus.</p>
+   </div>     </div> 
+  </section>
+
+  <section id="skills" class="skills-section">
+    <div class="about_me_text">
+      <h2>Skills</h2>
+    </div>
+    <h3>The skills, tools, and technologies I am really good at:</h3>
+    <div class="skill-lists" id="skillList"></div>
+  </section>
+  
+  
+
+    <section id="experience" class="experience-section">
+      <div class="about_me_text">
+        <h2>Experience</h2>
+      </div>      <div class="projects-grid">
+        <div class="project">
+          <img src="project1.jpg" alt="Project 1" />
+          <h3>Loyiha 1</h3>
+          <p>Bu loyihada men ... qilganman.</p>
+        </div>
+        <div class="project">
+          <img src="project2.jpg" alt="Project 2" />
+          <h3>Loyiha 2</h3>
+          <p>Bu loyihada men ... qilganman.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="projects-section">
+      <div class="about_me_text">
+        <h2>Projects</h2>
+      </div>      <div class="projects-grid">
+        <div class="project">
+          <img src="project1.jpg" alt="Project 1" />
+          <h3>Loyiha 1</h3>
+          <p>Bu loyihada men ... qilganman.</p>
+        </div>
+        <div class="project">
+          <img src="project2.jpg" alt="Project 2" />
+          <h3>Loyiha 2</h3>
+          <p>Bu loyihada men ... qilganman.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Men bilan bog'laning</h2>
+      <form class="contact-form">
+        <label for="name">Ismingiz</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Ismingizni kiriting"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email manzilingiz"
+          required
+        />
+        <label for="message">Xabaringiz</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Xabaringizni yozing"
+          required
+        ></textarea>
+        <button type="submit">Yuborish</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 MyPortfolio</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
