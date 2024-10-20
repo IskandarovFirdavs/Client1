@@ -9,19 +9,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
+    <div class="fade-in">
+      <h2>Welcome to Our Site!</h2>
+    </div>
+    
     <header>
-      <h1><span>&lt;/&gt;</span> My Portfolio</h1>
-      <nav>
+      <div class="logo_menu">
+      <h1> <a href="#home" class="logo_h1"><span>&lt;/&gt;</span> My Portfolio</a> </h1>
+      <button id="menu-toggle" class="menu-btn">☰</button> </div>
+      <nav id="navbar">
         <h3><a href="#about" class="nav-link">About</a></h3>
         <h3><a href="#skills" class="nav-link">Skills</a></h3>
-        <h3><a href="#experience" class="nav-link">Skills</a></h3>
+        <h3><a href="#experience" class="nav-link">Experience</a></h3>
         <h3><a href="#projects" class="nav-link">Projects</a></h3>
         <h3><a href="#contact" class="nav-link">Contact</a></h3>
         <button id="toggle-mode">🌙</button>
       </nav>
     </header>
+    
 
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="hero-text">
         <h2>Hi, I'm Avazbek &#9995</h2>
         <p>
@@ -46,7 +53,7 @@
     
     <img src="https://img.freepik.com/premium-photo/portrait-funny-businessman-beach-man-having-fun-by-sea-summer-vacation-travel-concept_411285-4244.jpg?w=360" alt="">
      <div class="about_right">   
-      <h1>Curious about me? Here you have it:</h1>
+      <h1 style="text-align: center;">Curious about me? Here you have it:</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil architecto minima dolor ex numquam beatae nulla odit reiciendis et voluptatem eligendi debitis totam asperiores, magnam consectetur maiores distinctio perspiciatis voluptate.</p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil architecto minima dolor ex numquam beatae nulla odit reiciendis et voluptatem eligendi debitis totam asperiores, magnam consectetur maiores distinctio perspiciatis voluptate.</p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil architecto minima dolor ex numquam beatae nulla odit reiciendis et voluptatem eligendi debitis totam asperiores, magnam consectetur maiores distinctio perspiciatis voluptate.
@@ -66,71 +73,40 @@
   
   
 
-    <section id="experience" class="experience-section">
-      <div class="about_me_text">
-        <h2>Experience</h2>
-      </div>      <div class="projects-grid">
-        <div class="project">
-          <img src="project1.jpg" alt="Project 1" />
-          <h3>Loyiha 1</h3>
-          <p>Bu loyihada men ... qilganman.</p>
-        </div>
-        <div class="project">
-          <img src="project2.jpg" alt="Project 2" />
-          <h3>Loyiha 2</h3>
-          <p>Bu loyihada men ... qilganman.</p>
-        </div>
+  <section id="experience" class="experience-section">
+      <div class="about_me_text"><h2>Experience</h2></div>
+      <div class="about_me_main_div">
+        <img class="about_me_photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="">
+        <div class="about_me_div">
+          <h1 class="about_me_h1">Ful Stack Developer</h1>
+          <ul class="about_me_ul">
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li> Suscipit, aliquam! Eligendi qui cum perferendis tenetur corrupti iste,</li>
+            <li>Eligendi qui cum perferendis tenetur corrupti iste,Eligendi qui cum perferendis tenetur corrupti iste, </li>
+            <li>quo voluptatem, explicabo ipsum eos eaque! Quae placeat fuga velit at, dolorum necessitatibus.</li>
+          </ul>
+          </div>
+        <b>July 2017 - June 2021</b>
+      </div>
+      <div class="about_me_main_div">
+        <img class="about_me_photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="">
+        <div class="about_me_div">
+          <h1 class="about_me_h1">Ful Stack Developer</h1>
+          <ul class="about_me_ul">
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li> Suscipit, aliquam! Eligendi qui cum perferendis tenetur corrupti iste,</li>
+            <li>Eligendi qui cum perferendis tenetur corrupti iste,Eligendi qui cum perferendis tenetur corrupti iste, </li>
+            <li>quo voluptatem, explicabo ipsum eos eaque! Quae placeat fuga velit at, dolorum necessitatibus.</li>
+          </ul>
+          </div>
+        <b>July 2017 - June 2021</b>
       </div>
     </section>
 
 
-    <section id="projects" class="projects-section">
-      <div class="about_me_text">
-        <h2>Projects</h2>
-      </div>      <div class="projects-grid">
-        <div class="project">
-          <img src="project1.jpg" alt="Project 1" />
-          <h3>Loyiha 1</h3>
-          <p>Bu loyihada men ... qilganman.</p>
-        </div>
-        <div class="project">
-          <img src="project2.jpg" alt="Project 2" />
-          <h3>Loyiha 2</h3>
-          <p>Bu loyihada men ... qilganman.</p>
-        </div>
-      </div>
-    </section>
+  
 
-    <section id="contact" class="contact-section">
-      <h2>Men bilan bog'laning</h2>
-      <form class="contact-form">
-        <label for="name">Ismingiz</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Ismingizni kiriting"
-          required
-        />
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email manzilingiz"
-          required
-        />
-        <label for="message">Xabaringiz</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="4"
-          placeholder="Xabaringizni yozing"
-          required
-        ></textarea>
-        <button type="submit">Yuborish</button>
-      </form>
-    </section>
+ 
 
     <footer>
       <p>&copy; 2024 MyPortfolio</p>

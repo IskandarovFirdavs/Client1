@@ -14,11 +14,12 @@ const body = document.body;
 toggleButton.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
   if (body.classList.contains("dark-mode")) {
-    toggleButton.textContent = "☀️"; // Switch to light mode icon
+    toggleButton.textContent = "☀️";
   } else {
-    toggleButton.textContent = "🌙"; // Switch to dark mode icon
+    toggleButton.textContent = "🌙";
   }
 });
+
 const backendDeveloperSkills = [
   {
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png",
@@ -101,4 +102,10 @@ backendDeveloperSkills.forEach((skill) => {
   skillItem.appendChild(skillLogo);
   skillItem.appendChild(skillName);
   skillListContainer.appendChild(skillItem);
+});
+const menuBtn = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+menuBtn.addEventListener("click", () => {
+  navbar.classList.toggle("active"); // "active" klassi orqali nav ko'rinadi yoki yo'qoladi
 });
